@@ -1,0 +1,11 @@
+{
+    "routes": [
+        {"controller": "index.js", "method": "toto"     , "regex": "^/toto$"                  , "scheme": ["http", "https"]},
+        {"controller": "index.js", "method": "toto"     , "regex": "^/toto-([a-z]+)$"         , "scheme": ["http", "https"]},
+        {"controller": "index.js", "method": "toto"     , "regex": "^/toto-([a-z]+)-([a-z]+)$", "scheme": ["http", "https"]},
+        {"controller": "index.js", "method": "monitor"  , "regex": "^/monitor$"               , "scheme": ["http", "https"]},
+        {"controller": "index.js", "method": "form"     , "regex": "^/form$"                  , "scheme": ["http", "https"]},
+        {"controller": "index.js", "method": "ws"       , "regex": "^/$"                      , "scheme": ["ws", "wss"]    },
+        {"controller": "index.js", "method": "ws404"    , "regex": "^/(.*)$"                  , "scheme": ["ws", "wss"]    }
+    ]
+}
