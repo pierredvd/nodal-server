@@ -46,10 +46,10 @@ module.exports = function SocketListener(options, ready, listen, send, update){
         __server = Net.createServer(function(socket){
             __onSockerReceive(socket, false, true);
         }).on('error', function(err){
-            if(e.code=='EADDRINUSE'){
+            if(err.code=='EADDRINUSE'){
                 console.error('<SocketListener> error: Port '+__options.port+' already in use');
             } else {
-                console.error('<SocketListener> error: '+e.message);
+                console.error('<SocketListener> error: '+err.message);
             }
             __server.close();
         }).listen(__options.port, function(){
@@ -68,10 +68,10 @@ module.exports = function SocketListener(options, ready, listen, send, update){
         __server = Tls.createServer(options, function(socket){
             __onSockerReceive(socket, true, socket.authorized);
         }).on('error', function(err){
-            if(e.code=='EADDRINUSE'){
+            if(err.code=='EADDRINUSE'){
                 console.error('<SocketListener> error: Port '+__options.port+' already in use');
             } else {
-                console.error('<SocketListener> error: '+e.message);
+                console.error('<SocketListener> error: '+err.message);
             }
             __server.close();
         }).listen(__options.port, function(){
