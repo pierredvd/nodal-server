@@ -6,7 +6,7 @@ En partant de ce principe, ou peut definir un serveur ou une application comme u
 Le code dans ce repository n'est qu'un possibilité de l'approche, l'on a ici un serveur HTTP, HTTPS, WebSocket, WebSockets rudimentaire a titre d'exemple.
 Ce dernier s'articule de la manière suivante :
 
-![alt text](https://github.com/pierredvd/nodal-server/tree/master/apps/localhost/www/nodal.jpg)
+![alt text](https://raw.githubusercontent.com/pierredvd/nodal-server/master/apps/localhost/www/nodal.jpg)
 
 Chaque functionalité atomique deviens un worker, qui accepte un payload d'entrée, le traite, et le passe au suivant.
 Les worker communique par une plateforme commune, servant de hub, et collectant les informations de monitoring.
