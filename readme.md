@@ -1,6 +1,6 @@
 ## Le principe nodal
 
-Nodal part du principe que, dans un serveur ou un applicatif, le seul élement indivible est la function.
+Nodal part du principe que, dans un serveur ou un applicatif, le seul élement indivisible est la function.
 En partant de ce principe, ou peut definir un serveur ou une application comme un groupe de fonction liés les unes aux autres, et une execution comme le parcours du graphe de ces fonctions.
 
 Le code dans ce repository n'est qu'une possibilité de l'approche, l'on a ici un serveur HTTP, HTTPS, WebSocket, WebSockets rudimentaire a titre d'exemple. L’intérêt n'est pas dans le résultat, mais dans l'approche, formalisée pour être réutilisable.
